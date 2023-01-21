@@ -1,0 +1,354 @@
+body{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.7;
+}
+a{
+    transition:color .2s linear, border .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #49bf9d;
+}
+img{
+    max-width: 100%;
+}
+
+.recent-works-card img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-img img{
+    width: 100%;
+
+}
+.gallery-thumb img, .gallery-img img{
+    margin-bottom: 2%;
+    display: inline-block; 
+    border-radius: 5px;
+    
+}
+
+.main-header-link img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+a:hover{
+    border-bottom-color: transparent;
+}
+
+p{
+    margin:0 0 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0;
+}
+h1{
+    font-size: 36;
+}
+h2{
+    font-size: 30;
+}
+h3{
+    font-size: 26;
+}
+h4{
+    font-size: 22;
+}
+h5{
+    font-size: 18;
+}
+h6{
+    font-size: 14;
+}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+}
+code{
+    background: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-family: "courier new", monospace;
+    color: #929292;
+}
+
+pre code{
+    display: block;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    padding-left: 1.1em;
+    
+}
+
+.ul-alternate{
+    list-style-type:none;
+    padding: 0;
+
+}
+.ul-alternate li{
+    border-bottom: 2px solid #ccc;
+    padding: 0;
+}
+.ul-alternate li:last-child{
+    border: 0;
+}
+.ul-icons{
+    list-style-type:none;
+    padding: 0;
+}
+.ul-icons li{
+    display: inline-block;
+    font-size: 1.5em;
+    color: #49bf9d;
+}
+
+input, label, textarea, select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea, select{
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    margin-bottom: 15px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+    
+    
+}
+
+input:focus, textarea:focus{
+    border: 3px solid #49bf9d;
+    outline: none;
+
+}
+
+textarea{
+    height: 160px;
+    font-family: sans-serif;
+}
+
+
+.botton-default{
+    color: white;
+    background-color: #49bf9d;
+    border: 3px solid #49bf9d;
+    padding: .75em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+
+}
+.botton-default:hover{
+    background-color: #5adeb9;
+    border-color: transparent;
+
+}
+
+.botton-default-stroke{
+    background-color: white;
+    border-color: #efefef;
+    color: inherit;    
+}
+.botton-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white ;
+}
+
+.botton-default-small{
+    font-size: 0.65em;
+}
+.botton-default-big{
+    font-size: 1em;
+}
+.botton-default-full{   
+    display: block;
+    text-align: center;
+}
+.table{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;
+    text-align: left;   
+}
+
+.table td{
+    padding: .75em;
+}
+.table th{ 
+    background: #ccc;
+    padding: .75em;
+}
+.table tbody tr td{
+    border-bottom: 1px solid #ccc;
+}
+.table tbody tr:first-child td{
+    border-top: 1px solid #ddd;
+
+}
+.table tbody tr:last-child td{
+    border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-child(odd) td{ /* SERVE PARA PEGAR UMA LINHA DE TABELA ESPECIFICA E MUDAR ELA"nth-child". PARA PEGAR 
+                                    SEMPRE FILHOS IMPARES E PARES USAR "odd para filhos impares" e "even para numeros pares"  */
+    background: #eee;
+}
+.table-alternate tbody  td{
+    border:1px solid #ddd;
+}
+
+.imagem-link{
+    border: 0;
+}
+
+
+.main-header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+    background-image: url(ProjetoStrataImages/overlay.png), url(ProjetoStrataImages/bg.jpg);
+    background-position: left top;
+    background-size: auto, cover;
+    text-align: right;
+}
+.main-header-title{
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .5);
+    font-weight: normal;
+}
+.main-header-title strong{
+    color: white;
+    font-weight: normal;
+}
+.main-header-link{
+    color: inherit;
+}
+.main-header-link:hover{
+    color: #49bf9d;
+}
+
+
+.main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+
+}
+
+.row{
+    overflow: auto;
+
+}
+
+.col-2{
+    width: 48.5%;
+    float: left;
+}
+.col-2:first-child{
+    margin-right: 1.5%;
+}
+.col-2:last-child{
+    margin-left: 1.5%;
+}
+
+.col-2-3{
+    width: 66%;
+    float: left;
+}
+.col-1-3{
+    width: 32%;
+    float: left; 
+}
+
+.col-1-3:nth-child(3n - 2){ /* 1, 4, 7*/
+    margin-right: 2%;
+}
+
+.col-1-3:nth-child(3n){  /* 3, 6, 9*/
+   margin-left: 2%;
+
+}
+
+.col-2-3 + .col-1-3, .col-1-3 + .col-2-3{
+    margin-left: 2%;
+}
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    left: 0;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 0px 54px 72px 0;
+    
+}
+
+.icon{
+    color: rgba(255, 255, 255, .5);
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 60;
+
+}
+
+.copyright{
+    color:rgba(255, 255, 255, .5);
+
+
+}
+
+.img-left{
+    float: left;
+}
+
+.img-right{
+    float: right;
+    
+}
+
+.p-img-left{
+    line-height: 1.5;
+    text-align: justify;
+    
+}
+
+.p-img-righ{
+    line-height: 1.5;
+    text-align: right;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
